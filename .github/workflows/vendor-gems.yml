@@ -98,7 +98,7 @@ jobs:
           fi
 
       - name: Generate push token
-        uses: actions/create-github-app-token@v1
+        uses: actions/create-github-app-token@v2
         id: app-token
         if: github.event_name == 'pull_request_target' || github.event_name == 'workflow_dispatch'
         with:
